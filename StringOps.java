@@ -53,6 +53,9 @@ public class StringOps {
         // Write your code here:
         String res = "";
         res += toLow(string.charAt(0)); // get the first letter of the string
+        if (res.charAt(0) == ' '){
+            res = "";
+        }
         for (int i = 1; i < string.length() ; i++){ // loop for to go over all char of the string
             char currentChar = string.charAt(i);
             char prevChar = string.charAt(i-1);
