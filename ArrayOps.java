@@ -2,22 +2,22 @@ import java.util.Arrays;
 
 public class ArrayOps {
     public static void main(String[] args) {
-        int[] arr = {4, 7, 9, 0, 263, 98, 873, 999};
-        int[] arr1 = {4, 5, 7, 8};
-        int[] arr2 = {4, 5, 7, 8, 8, 4, 5, 7};
-
-        System.out.println("for the function find missing int :" + " " + findMissingInt(arr1));
-        System.out.println("for the function second max value :" + " " + secondMaxValue(arr));
-        System.out.println("for the function second max value :" + " " + secondMaxValue(arr2));
-        System.out.println("for the function contain the same element :" + " " + containsTheSameElements(arr1, arr2));
-        System.out.println("for the function is sorted :" + " " + isSorted(arr));
-        System.out.println("for the function is sorted :" + " " + isSorted(arr1));
-        System.out.println("for the function is sorted :" + " " + isSorted(arr2));
+//        int[] arr = {4, 7, 9, 0, 263, 98, 873, 999};
+//        int[] arr1 = {4, 5, 7, 8};
+//        int[] arr2 = {4, 5, 7, 8, 8, 4, 5, 7};
+//
+//        System.out.println("for the function find missing int :" + " " + findMissingInt(arr1));
+//        System.out.println("for the function second max value :" + " " + secondMaxValue(arr));
+//        System.out.println("for the function second max value :" + " " + secondMaxValue(arr2));
+//        System.out.println("for the function contain the same element :" + " " + containsTheSameElements(arr1, arr2));
+//        System.out.println("for the function is sorted :" + " " + isSorted(arr));
+//        System.out.println("for the function is sorted :" + " " + isSorted(arr1));
+//        System.out.println("for the function is sorted :" + " " + isSorted(arr2));
 
 
     }
 
-    // function to find the missing number in a suit of integer number                                                                                                                          
+    // function to find the missing number in a suit of integer number
     public static int findMissingInt(int[] array) {
         // Write your code here:
         // we're assuming  n is greater of equal to 1

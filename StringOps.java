@@ -24,12 +24,12 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        String inputString = "Hello WOrLD ExaMPLE";
-        String modifiedString1 = capVowelsLowRest(inputString);
-        System.out.println(modifiedString1);
-        String modifiedString2 = camelCase(inputString);
-        System.out.println(modifiedString2);
-        System.out.println(Arrays.toString(allIndexOf("Hello world",'l')));
+//        String inputString = "Hello WOrLD ExaMPLE";
+//        String modifiedString1 = capVowelsLowRest(inputString);
+//        System.out.println(modifiedString1);
+//        String modifiedString2 = camelCase(inputString);
+//        System.out.println(modifiedString2);
+//        System.out.println(Arrays.toString(allIndexOf("Hello world",'l')));
         
     }
 
