@@ -48,21 +48,34 @@ public class ArrayOps {
         // function to know if two array contains the same element
         public static boolean containsTheSameElements ( int[] array1, int[] array2){
             // Write your code here:
-            sorted(array1);
-            sorted(array2);
-            set(array1);
-            set(array2);
-
-            for ( int i = 0; i < array1.length; i++){
-                if (array1[i] == array2[i]){
-                    return true;
+//            sorted(array1);
+//            sorted(array2);
+//            set(array1);
+//            set(array2);
+//
+//            for ( int i = 0; i < array1.length; i++){
+//                if (array1[i] == array2[i]){
+//                    return true;
+//                }
+//                if (array1.length != array2.length){
+//                    return false;
+//                }
+//            }
+//
+//            return false;
+            boolean same = false;
+            for(int i = 0; i < array1.length; i++){
+                for(int j = 0; j < array2.length; j++){
+                    if(array1[i] == array2[j]) {
+                        same = true;
+                    }
                 }
-                if (array1.length != array2.length){
+                if (same == false){
                     return false;
                 }
+                same = false;
             }
-
-            return false;
+            return true;
 
         }
 
