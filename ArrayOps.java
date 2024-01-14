@@ -25,7 +25,7 @@ public class ArrayOps {
         int count = 0;
         while (count < array.length){
             for (int i = 0; i < array.length; i++){
-                if (miss == count){
+                if (miss == array[i]){
                     miss++;
                 }
             }
@@ -57,10 +57,11 @@ public class ArrayOps {
                 if (array1[i] == array2[i]){
                     return true;
                 }
+                if (array1.length != array2.length){
+                    return false;
+                }
             }
-            if (array1.length != array2.length){
-                return false;
-            }
+
             return false;
 
         }
