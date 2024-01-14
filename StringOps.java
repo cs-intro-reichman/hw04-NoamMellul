@@ -52,14 +52,11 @@ public class StringOps {
     public static String camelCase (String string) {
         // Write your code here:
         String res = "";
-        res += toLow(string.charAt(0)); // get the first letter of the string
-        if (res.charAt(0) == ' '){
-            for (int j = 0; j < string.length(); j++ ){
-                if (res.charAt(0) != string.indexOf(j)){
-                    res = res + toLow(string.charAt(j));
-                }
-            }
+        if (string.charAt(0) == ' '){
+            string = string.substring(1);
         }
+        res += toLow(string.charAt(0)); // get the first letter of the string
+
         for (int i = 1; i < string.length() ; i++){ // loop for to go over all char of the string
             char currentChar = string.charAt(i);
             char prevChar = string.charAt(i-1);
