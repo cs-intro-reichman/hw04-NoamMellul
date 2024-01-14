@@ -30,6 +30,7 @@ public class StringOps {
 //        String modifiedString2 = camelCase(inputString);
 //        System.out.println(modifiedString2);
 //        System.out.println(Arrays.toString(allIndexOf("Hello world",'l')));
+        System.out.println(camelCase(" tWo    wordS"));
         
     }
 
