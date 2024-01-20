@@ -37,8 +37,10 @@ public class ArrayOps {
        // function to get the second max value in an array of integers
         public static int secondMaxValue ( int[] array){
             // Write your code here:
+            //linoy feedback: what is set do ? not clear from the name what this function does. Does this func have a return value? 
             set(array);
             sorted(array);
+            //linoy feedback: in one line you could write: return array[array.length - 2]
             int res = array[array.length - 2];
 
             return res;
@@ -52,7 +54,9 @@ public class ArrayOps {
             for(int i = 0; i < array1.length; i++){
                 for(int j = 0; j < array2.length; j++){
                     if(array1[i] == array2[j]) {
+                         //linoy feedback: when same== true, you continue running into the loop without target (waste of complexity)! to improve use: continue.
                         same = true;
+                        //linoy feedback: here add continue. it will skip the first for loop if he finds the same element.
                     }
                 }
                 if (same == false){
@@ -64,6 +68,7 @@ public class ArrayOps {
 
         }
 
+    //linoy feedback: great function!!!
         // function to know if array is sorted in ascending sort or decreasing sort
         public static boolean isSorted ( int[] array){
             // Write your code here:
